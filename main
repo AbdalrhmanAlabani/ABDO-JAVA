@@ -1,0 +1,21 @@
+
+package com.mycompany.mavenproject1;
+public class Mavenproject1 {
+
+    public class Main {
+    public static void main(String[] args) {
+        
+        RestaurantBox<Burger> burgerBox = new RestaurantBox<>();
+        Burger myBurger = new Burger("دبل برجر تشيز", 15.0);
+        burgerBox.putItem(myBurger);
+        burgerBox.displayOrderInfo();
+
+        System.out.println("-------");
+
+        RestaurantBox<Pizza> pizzaBox = new RestaurantBox<>();
+        Pizza myPizza = new Pizza("بيتزا بيبروني", 25.0);
+        pizzaBox.putItem(myPizza);
+        pizzaBox.displayOrderInfo();
+    }
+}
+}
